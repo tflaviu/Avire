@@ -16,10 +16,10 @@
 <!--        Header-->
         <div class="header-container">
             <div class="row">
-                <div class="header col-12">
+                <div class="header col-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="logo">
                         <span id="logo-span"></span>
-                        <button class="change_language" id="change_language" onclick="changeLanguage(1)"></button>
+                         <button class="change_language" id="change_language" onclick="changeLanguage(1)"></button>
                     </div>
             </div>
             </div>
@@ -30,35 +30,42 @@
     
 <!--        Main-->
         <div class="main-container">
+<!--
             <div class="image_show">
                 <span id="subtitle_span"></span>
             </div>
-            <div class="container">
+-->
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-md-2 description-box">
+                    <div class="image_show col-12 col-md-12 col-lg-12 col-xl-12">
+                        <span id="subtitle_span"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mx-auto col-12 col-md-2 col-lg-2 col-xl-2 description-box">
                         <span id="first_describe_box1">44</span>  
                         <span id="first_describe_box2"></span>
                     </div>
-                    <div class="col-12 col-md-2 description-box">
+                    <div class="mx-auto col-12 col-md-2 col-lg-2 col-xl-2 description-box">
                         <span id="second_describe_box1"></span> 
                         <span id="second_describe_box2"></span>
                     </div>
-                    <div class="col-12 col-md-2 description-box">
+                    <div class="mx-auto col-12 col-md-2 col-lg-2 col-xl-2 description-box">
                         <span id="third_describe_box1"></span> 
                         <span id="third_describe_box2"></span>
                     </div>
-                    <div class="col-12 col-md-2 description-box">
+                    <div class="mx-auto col-12 col-md-2 col-lg-2 col-xl-2 description-box">
                         <span id="fourth_describe_box1"></span>
                         <span id="fourth_describe_box2"></span>
                     </div>
-                    <div class="col-12 col-md-2 description-box">
+                    <div class="mx-auto col-12 col-md-2 col-lg-2 col-xl-2 description-box">
                         <span id="fifth_describe_box1"></span> 
                         <span id="fifth_describe_box2"></span>
                     </div>
                 </div>
                 
                 <div class="row">
-                    <div class="col-12 col services">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 mx-auto services">
                         <span id="services">SERVICES</span>
                         <div id="lorem-ipsum">
                             <p id="services_content"></p>
@@ -66,15 +73,15 @@
                     </div>
                 </div>    
                 <div class="row">
-                    <div class="col-4 col-md-4 art-box photography-art-box">
+                    <div class="col-4 col-md-2 col-lg-2 col-xl-3 mx-auto art-box photography-art-box">
                         <i class="fa fa-camera" aria-hidden="true"></i><br>
                         <span id="art_box_1"></span>
                     </div>
-                    <div class="col-4 col-md-4 art-box graphic-design-art-box">
+                    <div class="col-4 col-md-2 col-lg-2 col-xl-3 mx-auto art-box graphic-design-art-box">
                         <i class="fa fa-paint-brush" aria-hidden="true"></i><br>
                         <span id="art_box_2"></span>
                     </div>
-                    <div class="col-4 col-md-4 art-box audio-producing-art-box">
+                    <div class="col-4 col-md-2 col-lg-2 col-xl-3 mx-auto art-box audio-producing-art-box">
                         <i class="fa fa-headphones" aria-hidden="true"></i><br>
                         <span id="art_box_3"></span>
                     </div>
@@ -84,86 +91,19 @@
         
 <!--        Footer-->
         <div class="footer">
-            <div class="container">
-                <div class="latest-projects col-12 col-md-12">
-                    <span id="footer_span"></span>
-                    <div class="social_media_icons">
-                        <a href="https://www.facebook.com/"><div class="facebook-icon"></div></a>  
-                        <div class="twitter-icon"></div>
-                        <div class="phone-icon"></div>
-                        <div class="mail-icon"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="latest-projects mx-auto col-12 col-md-12 .offset-md-1 .offset-lg-1 offset-xl-1 col-lg-12 col-xl-12">
+                        <span id="footer_span"></span>
+                        <div class="social_media_icons">
+                            <a href="https://www.facebook.com/"><div class="facebook-icon"></div></a>  
+                            <div class="twitter-icon"></div>
+                            <div class="phone-icon"></div>
+                            <div class="mail-icon"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    <script>
-//        $.getJSON( "romana.json", function( json ) {
-//                  $("#logo-span").text(json.logo);
-//                    $("#change_language").text(json.language);
-//                    $("#subtitle_span").text(json.subtitle);
-//                    $("#first_describe_box1").text(json.first_describe_box[0]);
-//                    $("#first_describe_box2").text(json.first_describe_box[1]);
-//                    $("#second_describe_box1").text(json.second_describe_box[0]);
-//                    $("#second_describe_box2").text(json.second_describe_box[1]);
-//                    $("#third_describe_box1").text(json.third_describe_box[0]);
-//                    $("#third_describe_box2").text(json.third_describe_box[1]);
-//                    $("#fourth_describe_box1").text(json.fourth_describe_box[0]);
-//                    $("#fourth_describe_box2").text(json.fourth_describe_box[1]);
-//                    $("#fifth_describe_box1").text(json.fifth_describe_box[0]);
-//                    $("#fifth_describe_box2").text(json.fifth_describe_box[1]);
-//                    $("#services_content").text(json.services_content);
-//                    $("#art_box_1").text(json.art_box1);
-//                    $("#art_box_2").text(json.art_box2);
-//                    $("#art_box_3").text(json.art_box3);
-//                    $("#footer_span").text(json.footer);
-//        });
-//        var i = 1; 
-//        $("#change_language").click(function(){
-//            if (i % 2 != 0) {
-//                $.getJSON( "english.json", function( json ) {
-//                  $("#logo-span").text(json.logo);
-//                    $("#change_language").text(json.language);
-//                    $("#subtitle_span").text(json.subtitle);
-//                    $("#first_describe_box1").text(json.first_describe_box[0]);
-//                    $("#first_describe_box2").text(json.first_describe_box[1]);
-//                    $("#second_describe_box1").text(json.second_describe_box[0]);
-//                    $("#second_describe_box2").text(json.second_describe_box[1]);
-//                    $("#third_describe_box1").text(json.third_describe_box[0]);
-//                    $("#third_describe_box2").text(json.third_describe_box[1]);
-//                    $("#fourth_describe_box1").text(json.fourth_describe_box[0]);
-//                    $("#fourth_describe_box2").text(json.fourth_describe_box[1]);
-//                    $("#fifth_describe_box1").text(json.fifth_describe_box[0]);
-//                    $("#fifth_describe_box2").text(json.fifth_describe_box[1]);
-//                    $("#services_content").text(json.services_content);
-//                    $("#art_box_1").text(json.art_box1);
-//                    $("#art_box_2").text(json.art_box2);
-//                    $("#art_box_3").text(json.art_box3);
-//                    $("#footer_span").text(json.footer);
-//                 });
-//            } else {
-//                $.getJSON( "romana.json", function( json ) {
-//                  $("#logo-span").text(json.logo);
-//                    $("#change_language").text(json.language);
-//                    $("#subtitle_span").text(json.subtitle);
-//                    $("#first_describe_box1").text(json.first_describe_box[0]);
-//                    $("#first_describe_box2").text(json.first_describe_box[1]);
-//                    $("#second_describe_box1").text(json.second_describe_box[0]);
-//                    $("#second_describe_box2").text(json.second_describe_box[1]);
-//                    $("#third_describe_box1").text(json.third_describe_box[0]);
-//                    $("#third_describe_box2").text(json.third_describe_box[1]);
-//                    $("#fourth_describe_box1").text(json.fourth_describe_box[0]);
-//                    $("#fourth_describe_box2").text(json.fourth_describe_box[1]);
-//                    $("#fifth_describe_box1").text(json.fifth_describe_box[0]);
-//                    $("#fifth_describe_box2").text(json.fifth_describe_box[1]);
-//                    $("#services_content").text(json.services_content);
-//                    $("#art_box_1").text(json.art_box1);
-//                    $("#art_box_2").text(json.art_box2);
-//                    $("#art_box_3").text(json.art_box3);
-//                    $("#footer_span").text(json.footer);
-//                });
-//            }
-//            i++;
-//        });
-  </script>
     </body>
 </html>
