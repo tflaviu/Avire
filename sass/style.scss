@@ -1,0 +1,239 @@
+@import "variable";
+
+@media all and (max-width: 575px) {
+    .art-box {
+        height: $sm-art-box-height;
+        margin: $sm-art-box-margin;
+        padding-top: 30px;
+    }
+
+    .description-box {
+        height: $sm-description-box-height;
+    }
+
+    .image_show {
+        max-width: $sm-image-show-width;
+    }
+}
+
+@media all and (min-width: 576px) and (max-width: 991px) {
+    .art-box {
+        height: $md-art-box-height;
+        margin: $md-art-box-margin;
+        padding-top: 30px;
+    }
+
+    .description-box {
+        height: $md-description-box-height;
+        padding-top: 20px;
+    }
+
+    .image_show {
+        max-width: $md-image-show-width;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .art-box {
+        height: $lg-art-box-height;
+        margin: $lg-art-box-margin;
+        padding-top: 40px;
+    }
+
+    .description-box {
+        height: $lg-description-box-height;
+        padding-top: 30px;
+    }
+
+    .image_show {
+        max-width: $lg-image-show-width;
+    }
+}
+
+html {
+    font-size: $html-font-size;
+    width: $html-width;
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    background: $color-2;
+    width: $body-width;
+}
+
+.header {
+    position: relative;
+    height: $header-height;
+}
+
+.logo {
+    margin-top: 34.5px;
+    margin-left: 50px;
+}
+
+.logo span {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: $font-1;
+    color: $color-3;
+    font-weight: bold;
+    line-height: 0.16;
+    position: absolute;
+}
+
+
+.image_show {
+    text-align: center;
+    padding-top: 50px;
+    background: url('../images/mountains.jpg');
+    height: 400px;
+}
+
+.image_show span {
+    text-transform: uppercase;
+    color: $color-1;
+    background-color: $image-show-span-bg-color;
+    padding: 10px;
+    font-size: 2.8rem;
+}
+
+.change_language {
+    float: right;
+    clear: both;
+    font-size: $change-language-font-size;
+    font-family: $font-1;
+    background-color: $change-language-bg-color;
+    color: $color-1;
+    border: 0;
+    margin-right: 50px;
+    margin-top: -15px;
+}
+
+.social_media_icons .facebook-icon, .twitter-icon {
+    float: right;
+    display: block;
+    clear: both;
+}
+
+.social_media_icons .phone-icon, .mail-icon {
+    margin-top: 0 auto;
+    display: block;
+}
+
+.social_media_icons .phone-icon {
+    margin-top: -40px;
+}
+
+.social_media_icons .mail-icon, .twitter-icon {
+    margin-top: 10px;
+}
+
+.facebook-icon {
+    width: $social-media-icon-width; height: $social-media-icon-height;
+    background: url('../images/social_media_sprites_xs_devices.png') -10px -10px;    }
+
+.twitter-icon {
+    width: $social-media-icon-width; height: $social-media-icon-height;
+    background: url('../images/social_media_sprites_xs_devices.png') -46px -46px;
+}
+
+.phone-icon {
+    width: $social-media-icon-width; height: $social-media-icon-height;
+    background: url('../images/social_media_sprites_xs_devices.png') -10px -46px;
+}
+
+.mail-icon {
+    width: $social-media-icon-width; height: $social-media-icon-height;
+    background: url('../images/social_media_sprites_xs_devices.png') -46px -10px;
+}
+
+.main-container {
+    min-height: $main-container-width;
+}
+
+.description-box {
+    width: $description-box-width;
+    text-align: center;
+    border: 1px white solid;
+    float: left;
+}
+
+.description-box span {
+    padding-top: 5px;
+    display: block;
+    color: $color-3;
+    font-size: $description-box-font-size;
+    font-family: $font-2;
+    line-height: 1.2;
+}
+
+.services {
+    background-color: $color-1;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: $services-font-size;
+    font-family: $font-1;
+    color: $services-color;
+    line-height: 1.2;
+
+}
+
+.services p {
+    font-size: $services-p-font-size;
+    font-family: $font-2;
+    color: $services-p-color;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.art-box {
+    color: $color-1;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.audio-producing-art-box, .photography-art-box {
+    background-color: $ap-bg-color;
+    color: $ap-color;
+}
+
+.graphic-design-art-box {
+    background-color: $gd-bg-color;
+    color: gd-color;
+}
+
+.art-box i {
+    position: relative;
+}
+
+.art-box span {
+    margin-top: 20px;
+    font-size: $art-box-font-size;
+    font-family: $font-2;
+    line-height: 1.2;
+}
+
+.fa {
+    font-size: $fa-font-size;
+}
+
+.footer{
+    height: $footer-height;
+    padding-top: 15px;
+    font-size: 25px;
+    font-family: $font-1;
+    color: $color-3;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: capitalize;
+}

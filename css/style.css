@@ -1,258 +1,199 @@
 @media all and (max-width: 575px) {
-    .art-box {
-        height: 80px;
-        color: white;
-        margin-top: 20px;
-        margin-right: 10px;
-        text-align: center;
-        position: relative;
-        padding-top: 30px;
-        overflow: hidden;
-    }
-    
-    .description-box {
-        height: 60px;
-    }
-    
-    .image_show {
-        max-width: 575px;
-    }
-}
+  .art-box {
+    height: 80px;
+    margin: 20px 10px 0px 0px;
+    padding-top: 30px; }
 
+  .description-box {
+    height: 60px; }
+
+  .image_show {
+    max-width: 575px; } }
 @media all and (min-width: 576px) and (max-width: 991px) {
-    .art-box {
-        height: 100px;
-        color: white;
-        margin-top: 25px;
-        margin-right: 10px;
-        text-align: center;
-        position: relative;
-        padding-top: 30px;
-        overflow: hidden;
-    }
-    
-    .description-box {
-        height: 100px;
-        padding-top: 20px;
-    }
-    
-    .image_show {
-        max-width: 991px;
-    }
-}
+  .art-box {
+    height: 100px;
+    margin: 25px 10px 0px 0px;
+    padding-top: 30px; }
 
+  .description-box {
+    height: 100px;
+    padding-top: 20px; }
+
+  .image_show {
+    max-width: 991px; } }
 @media all and (min-width: 992px) {
-    .art-box {
-        height: 120px;
-        color: white;
-        margin-top: 30px;
-        margin-right: 10px;
-        text-align: center;
-        position: relative;
-        padding-top: 40px;
-        overflow: hidden;
-    }
-    
-    .description-box {
-        height: 120px;
-        padding-top: 30px;
-    }
-    
-    .image_show {
-        max-width: 100%;
-    }
-}
+  .art-box {
+    height: 120px;
+    margin: 30px 10px 0px 0px;
+    padding-top: 40px; }
 
- html {
-        font-size: 9px;
-        width: 100%;
-    }
-    
-    body {
-        margin: 0; 
-        padding: 0; 
-        top: 0;
-        bottom: 0; 
-        left: 0;
-        right: 0;
-        background: black;
-        width: 100%;
-    }
-    
-    .header {
-        position: relative;
-        background-color: black;
-        height: 70px;
-    }
+  .description-box {
+    height: 120px;
+    padding-top: 30px; }
 
-    .logo {
-        margin-top: 34.5px;
-        margin-left: 50px;
-    }
-    
-    .logo span {
-        text-transform: uppercase;
-        font-size: 3rem;
-        font-family: "Montserrat";
-        color: rgb(235, 235, 235);
-        font-weight: bold;
-        line-height: 0.16;
-        position: absolute;
-}
+  .image_show {
+    max-width: 100%; } }
+html {
+  font-size: 9px;
+  width: 100%; }
 
-    
-    .image_show {
-        text-align: center;
-        padding-top: 50px;
-        background: url('../images/mountains.jpg');
-        height: 400px;
-    }
-    
-    .image_show span {
-        text-transform: uppercase;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: 10px;
-        font-size: 2.8rem;
-    }
-    
-    .change_language {
-        float: right;
-        clear: both;
-        font-size: 1.9rem;
-        font-family: montserrat;
-        background-color: transparent;
-        color: #fff;
-        border: 0;
-        margin-right: 50px;
-        margin-top: -15px;
-    }
-    
-    .social_media_icons .facebook-icon, .twitter-icon {
-        float: right;
-        display: block;
-        clear: both;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  width: 100%; }
 
-    .social_media_icons .phone-icon, .mail-icon {
-        margin-top: 0 auto;
-        display: block;
-    }
-    
-    .social_media_icons .phone-icon {
-        margin-top: -40px;
-    }
-    
-    .social_media_icons .mail-icon, .twitter-icon {
-        margin-top: 10px;
-    }
-    
-    .facebook-icon {
-        width: 16px; height: 16px;
-        background: url('../images/social_media_sprites_xs_devices.png') -10px -10px;    }
+.header {
+  position: relative;
+  height: 70px; }
 
-    .twitter-icon {
-        width: 16px; height: 16px;
-        background: url('../images/social_media_sprites_xs_devices.png') -46px -46px;
-    }
-    
-    .phone-icon {
-        width: 16px; height: 16px;
-        background: url('../images/social_media_sprites_xs_devices.png') -10px -46px;
-    }
-    
-    .mail-icon {
-        width: 16px; height: 16px;
-        background: url('../images/social_media_sprites_xs_devices.png') -46px -10px;
-    }
-    
-    .main-container {
-        min-height: 100%;
-    }
-    
-    .main-container .container {
-/*        background-color: aqua;*/
-    }
-    
-    .description-box {
-        width: 200px;
-        text-align: center;
-        border: 1px white solid;
-        float: left;
-    }
-    
-    .description-box span {
-        padding-top: 5px;
-        display: block;
-        color: rgb(235, 235, 235);
-        font-size: 2rem;
-        font-family: "Arvo";
-        line-height: 1.2;
-    }
+.logo {
+  margin-top: 34.5px;
+  margin-left: 50px; }
 
-    
-    .services {
-        background-color: white;
-        width: 100%;
-        height: auto;
-        text-align: center;
-        font-size: 30px;
-        font-family: "Montserrat";
-        color: rgb(17, 17, 17);
-        line-height: 1.2;
-      
-    }
-    
-    .services p {
-        font-size: 1.2rem;
-        font-family: "Arvo";
-        color: rgb(0, 0, 0);
-        line-height: 1.2;
-        text-align: center;
-    }
+.logo span {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: Montserrat;
+  color: #ebebeb;
+  font-weight: bold;
+  line-height: 0.16;
+  position: absolute; }
 
-    .art-box {
-        color: white;
-        margin-top: 30px;
-        margin-bottom: 10px;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .audio-producing-art-box, .photography-art-box {
-        background-color: #EA9999;
-        color: rgb(255, 255, 255);
-    }
+.image_show {
+  text-align: center;
+  padding-top: 50px;
+  background: url("../images/mountains.jpg");
+  height: 400px; }
 
-    .graphic-design-art-box {
-        background-color: #9fc5f8;
-        color: rgb(17, 17, 17);
-    }
-    
-    .art-box i {
-        position: relative;
-    }
-    
-    .art-box span {
-        margin-top: 20px;
-        font-size: 1.7rem;
-        font-family: "Arvo";
-        line-height: 1.2;
-    }
-    
-    .fa {
-        font-size: 2.5rem;
-    }
-    
-    .footer{
-        height: 55px;
-        padding-top: 15px;
-        font-size: 25px;
-        font-family: "Montserrat";
-        color: rgb(235, 235, 235);
-        text-transform: uppercase;
-        line-height: 1.2;
-        text-align: center;
-        text-transform: capitalize;
-    }
+.image_show span {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  font-size: 2.8rem; }
+
+.change_language {
+  float: right;
+  clear: both;
+  font-size: 1.9rem;
+  font-family: Montserrat;
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  margin-right: 50px;
+  margin-top: -15px; }
+
+.social_media_icons .facebook-icon, .twitter-icon {
+  float: right;
+  display: block;
+  clear: both; }
+
+.social_media_icons .phone-icon, .mail-icon {
+  margin-top: 0 auto;
+  display: block; }
+
+.social_media_icons .phone-icon {
+  margin-top: -40px; }
+
+.social_media_icons .mail-icon, .twitter-icon {
+  margin-top: 10px; }
+
+.facebook-icon {
+  width: 16px;
+  height: 16px;
+  background: url("../images/social_media_sprites_xs_devices.png") -10px -10px; }
+
+.twitter-icon {
+  width: 16px;
+  height: 16px;
+  background: url("../images/social_media_sprites_xs_devices.png") -46px -46px; }
+
+.phone-icon {
+  width: 16px;
+  height: 16px;
+  background: url("../images/social_media_sprites_xs_devices.png") -10px -46px; }
+
+.mail-icon {
+  width: 16px;
+  height: 16px;
+  background: url("../images/social_media_sprites_xs_devices.png") -46px -10px; }
+
+.main-container {
+  min-height: 100%; }
+
+.description-box {
+  width: 200px;
+  text-align: center;
+  border: 1px white solid;
+  float: left; }
+
+.description-box span {
+  padding-top: 5px;
+  display: block;
+  color: #ebebeb;
+  font-size: 2rem;
+  font-family: Arvo;
+  line-height: 1.2; }
+
+.services {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 30px;
+  font-family: Montserrat;
+  color: #111111;
+  line-height: 1.2; }
+
+.services p {
+  font-size: 1.2rem;
+  font-family: Arvo;
+  color: black;
+  line-height: 1.2;
+  text-align: center; }
+
+.art-box {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; }
+
+.audio-producing-art-box, .photography-art-box {
+  background-color: #EA9999;
+  color: white; }
+
+.graphic-design-art-box {
+  background-color: #9fc5f8;
+  color: gd-color; }
+
+.art-box i {
+  position: relative; }
+
+.art-box span {
+  margin-top: 20px;
+  font-size: 1.7rem;
+  font-family: Arvo;
+  line-height: 1.2; }
+
+.fa {
+  font-size: 2.5rem; }
+
+.footer {
+  height: 55px;
+  padding-top: 15px;
+  font-size: 25px;
+  font-family: Montserrat;
+  color: #ebebeb;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: capitalize; }
+
+/*# sourceMappingURL=style.css.map */
