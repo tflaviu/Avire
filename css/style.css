@@ -1,38 +1,3 @@
-@media all and (max-width: 575px) {
-  .art-box {
-    height: 80px;
-    margin: 20px 10px 0px 0px;
-    padding-top: 30px; }
-
-  .description-box {
-    height: 60px; }
-
-  .image_show {
-    max-width: 575px; } }
-@media all and (min-width: 576px) and (max-width: 991px) {
-  .art-box {
-    height: 100px;
-    margin: 25px 10px 0px 0px;
-    padding-top: 30px; }
-
-  .description-box {
-    height: 100px;
-    padding-top: 20px; }
-
-  .image_show {
-    max-width: 991px; } }
-@media all and (min-width: 992px) {
-  .art-box {
-    height: 120px;
-    margin: 30px 10px 0px 0px;
-    padding-top: 40px; }
-
-  .description-box {
-    height: 120px;
-    padding-top: 30px; }
-
-  .image_show {
-    max-width: 100%; } }
 html {
   font-size: 9px;
   width: 100%; }
@@ -54,28 +19,35 @@ body {
 .logo {
   margin-top: 34.5px;
   margin-left: 50px; }
-
-.logo span {
-  text-transform: uppercase;
-  font-size: 3rem;
-  font-family: Montserrat;
-  color: #ebebeb;
-  font-weight: bold;
-  line-height: 0.16;
-  position: absolute; }
+  .logo span {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: Montserrat;
+    color: #ebebeb;
+    font-weight: bold;
+    line-height: 0.16;
+    position: absolute; }
 
 .image_show {
   text-align: center;
   padding-top: 50px;
   background: url("../images/mountains.jpg");
   height: 400px; }
-
-.image_show span {
-  text-transform: uppercase;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 10px;
-  font-size: 2.8rem; }
+  .image_show span {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    font-size: 2.8rem; }
+  @media all and (max-width: 575px) {
+    .image_show {
+      max-width: 575px; } }
+  @media all and (min-width: 576px) and (max-width: 991px) {
+    .image_show {
+      max-width: 991px; } }
+  @media (min-width: 992px) {
+    .image_show {
+      max-width: 100%; } }
 
 .change_language {
   float: right;
@@ -131,14 +103,24 @@ body {
   text-align: center;
   border: 1px white solid;
   float: left; }
-
-.description-box span {
-  padding-top: 5px;
-  display: block;
-  color: #ebebeb;
-  font-size: 2rem;
-  font-family: Arvo;
-  line-height: 1.2; }
+  @media all and (max-width: 575px) {
+    .description-box {
+      height: 60px; } }
+  @media all and (min-width: 576px) and (max-width: 991px) {
+    .description-box {
+      height: 100px;
+      padding-top: 20px; } }
+  @media (min-width: 992px) {
+    .description-box {
+      height: 120px;
+      padding-top: 30px; } }
+  .description-box span {
+    padding-top: 5px;
+    display: block;
+    color: #ebebeb;
+    font-size: 2rem;
+    font-family: Arvo;
+    line-height: 1.2; }
 
 .services {
   background-color: #fff;
@@ -149,13 +131,12 @@ body {
   font-family: Montserrat;
   color: #111111;
   line-height: 1.2; }
-
-.services p {
-  font-size: 1.2rem;
-  font-family: Arvo;
-  color: black;
-  line-height: 1.2;
-  text-align: center; }
+  .services p {
+    font-size: 1.2rem;
+    font-family: Arvo;
+    color: black;
+    line-height: 1.2;
+    text-align: center; }
 
 .art-box {
   color: #fff;
@@ -164,6 +145,28 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden; }
+  @media all and (max-width: 575px) {
+    .art-box {
+      height: 80px;
+      margin: 20px 10px 0px 0px;
+      padding-top: 30px; } }
+  @media all and (min-width: 576px) and (max-width: 991px) {
+    .art-box {
+      height: 100px;
+      margin: 25px 10px 0px 0px;
+      padding-top: 30px; } }
+  @media (min-width: 992px) {
+    .art-box {
+      height: 120px;
+      margin: 30px 10px 0px 0px;
+      padding-top: 40px; } }
+  .art-box i {
+    position: relative; }
+  .art-box span {
+    margin-top: 20px;
+    font-size: 1.7rem;
+    font-family: Arvo;
+    line-height: 1.2; }
 
 .audio-producing-art-box, .photography-art-box {
   background-color: #EA9999;
@@ -172,15 +175,6 @@ body {
 .graphic-design-art-box {
   background-color: #9fc5f8;
   color: gd-color; }
-
-.art-box i {
-  position: relative; }
-
-.art-box span {
-  margin-top: 20px;
-  font-size: 1.7rem;
-  font-family: Arvo;
-  line-height: 1.2; }
 
 .fa {
   font-size: 2.5rem; }

@@ -1,52 +1,12 @@
 @import "variable";
 
-@media all and (max-width: 575px) {
-    .art-box {
-        height: $sm-art-box-height;
-        margin: $sm-art-box-margin;
-        padding-top: 30px;
-    }
-
-    .description-box {
-        height: $sm-description-box-height;
-    }
-
-    .image_show {
-        max-width: $sm-image-show-width;
-    }
-}
-
-@media all and (min-width: 576px) and (max-width: 991px) {
-    .art-box {
-        height: $md-art-box-height;
-        margin: $md-art-box-margin;
-        padding-top: 30px;
-    }
-
-    .description-box {
-        height: $md-description-box-height;
-        padding-top: 20px;
-    }
-
-    .image_show {
-        max-width: $md-image-show-width;
-    }
-}
-
-@media all and (min-width: 992px) {
-    .art-box {
-        height: $lg-art-box-height;
-        margin: $lg-art-box-margin;
-        padding-top: 40px;
-    }
-
-    .description-box {
-        height: $lg-description-box-height;
-        padding-top: 30px;
-    }
-
-    .image_show {
-        max-width: $lg-image-show-width;
+@mixin respond-to($media) {
+    @if $media == sm-screen {
+        @media all and (max-width: $sm-max-width) { @content; }
+    } @else if $media == md-screen {
+        @media all and (min-width: $md-min-width) and (max-width: $md-max-width) { @content; }
+    } @else if $media == lg-screen {
+        @media (min-width: $lg-min-width) { @content; }
     }
 }
 
@@ -74,32 +34,38 @@ body {
 .logo {
     margin-top: 34.5px;
     margin-left: 50px;
+    span {
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-family: $font-1;
+        color: $color-3;
+        font-weight: bold;
+        line-height: 0.16;
+        position: absolute;
+    }
 }
-
-.logo span {
-    text-transform: uppercase;
-    font-size: 3rem;
-    font-family: $font-1;
-    color: $color-3;
-    font-weight: bold;
-    line-height: 0.16;
-    position: absolute;
-}
-
 
 .image_show {
     text-align: center;
     padding-top: 50px;
     background: url('../images/mountains.jpg');
     height: 400px;
-}
-
-.image_show span {
-    text-transform: uppercase;
-    color: $color-1;
-    background-color: $image-show-span-bg-color;
-    padding: 10px;
-    font-size: 2.8rem;
+    span {
+        text-transform: uppercase;
+        color: $color-1;
+        background-color: $image-show-span-bg-color;
+        padding: 10px;
+        font-size: 2.8rem;
+    }
+    @include respond-to(sm-screen) {
+        max-width: $sm-image-show-width;
+    }
+    @include respond-to(md-screen) {
+        max-width: $md-image-show-width;
+    }
+    @include respond-to(lg-screen) {
+        max-width: $lg-image-show-width;
+    }
 }
 
 .change_language {
@@ -157,19 +123,29 @@ body {
 }
 
 .description-box {
+    @include respond-to(sm-screen) {
+        height: $sm-description-box-height;
+    }
+    @include respond-to(md-screen) {
+        height: $md-description-box-height;
+        padding-top: 20px;
+    }
+    @include respond-to(lg-screen) {
+        height: $lg-description-box-height;
+        padding-top: 30px;
+    }
     width: $description-box-width;
     text-align: center;
     border: 1px white solid;
     float: left;
-}
-
-.description-box span {
-    padding-top: 5px;
-    display: block;
-    color: $color-3;
-    font-size: $description-box-font-size;
-    font-family: $font-2;
-    line-height: 1.2;
+    span {
+        padding-top: 5px;
+        display: block;
+        color: $color-3;
+        font-size: $description-box-font-size;
+        font-family: $font-2;
+        line-height: 1.2;
+    }
 }
 
 .services {
@@ -181,18 +157,40 @@ body {
     font-family: $font-1;
     color: $services-color;
     line-height: 1.2;
-
-}
-
-.services p {
-    font-size: $services-p-font-size;
-    font-family: $font-2;
-    color: $services-p-color;
-    line-height: 1.2;
-    text-align: center;
+    p {
+        font-size: $services-p-font-size;
+        font-family: $font-2;
+        color: $services-p-color;
+        line-height: 1.2;
+        text-align: center;
+    }
 }
 
 .art-box {
+    @include respond-to(sm-screen) { 
+        height: $sm-art-box-height;
+        margin: $sm-art-box-margin;
+        padding-top: 30px;
+    }
+    @include respond-to(md-screen) {
+        height: $md-art-box-height;
+        margin: $md-art-box-margin;
+        padding-top: 30px;
+    }
+    @include respond-to(lg-screen) {
+        height: $lg-art-box-height;
+        margin: $lg-art-box-margin;
+        padding-top: 40px;
+    }
+    i {
+        position: relative;
+    }
+    span {
+        margin-top: 20px;
+        font-size: $art-box-font-size;
+        font-family: $font-2;
+        line-height: 1.2;
+    }
     color: $color-1;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -209,17 +207,6 @@ body {
 .graphic-design-art-box {
     background-color: $gd-bg-color;
     color: gd-color;
-}
-
-.art-box i {
-    position: relative;
-}
-
-.art-box span {
-    margin-top: 20px;
-    font-size: $art-box-font-size;
-    font-family: $font-2;
-    line-height: 1.2;
 }
 
 .fa {

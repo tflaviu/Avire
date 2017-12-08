@@ -1,5 +1,10 @@
-//small devices
+//responsive design
+$sm-max-width : 575px;
+$md-min-width : 576px;
+$md-max-width : 991px;
+$lg-min-width : 992px;
 
+//small devices
 $sm-art-box-height : 80px;
 $sm-art-box-margin : 20px 10px 0px 0px;
 $sm-description-box-height: 60px;
